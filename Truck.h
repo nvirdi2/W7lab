@@ -17,9 +17,9 @@ namespace sdds
 		double Cargo;
 	public:
 		Truck(const char* Plate, int year, double m_capacity, const char* address);
-		bool addCargo(double cargo);
+		bool cargoAdded(double cargo);
 
-		bool unloadCargo();
+		bool cargoUnloaded();
 
 		std::ostream& write(std::ostream& os);
 		std::istream& read(std::istream& in);
