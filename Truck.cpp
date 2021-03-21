@@ -17,7 +17,7 @@ using namespace std;
 
 namespace sdds 
 {
-	bool Truck::cargoUnload() 
+	bool Truck::unloadCargo() 
 	{
 		bool Load;
 
