@@ -48,7 +48,7 @@ namespace sdds
 		return Load;*/
 		
 		bool Load;
-		if (cargo == 0) Capacity == Cargo 
+		if (cargo == 0)
 		{
 		Load = false;
 		}
@@ -67,10 +67,7 @@ namespace sdds
 				Cargo = Capacity;
 			}
 			Load = true;
-		}
-		return Load;
-		
-			
+		} return Load;
 	}
 
 	ostream& operator<<(ostream& os, Truck& Truck) 
