@@ -6,9 +6,7 @@
 //I have done all the coding by myself and only copied the code that my professor provided to complete my workshops and assignments.
 #include <iostream>
 #include <ostream>
-//#include <cstring>
-#include "cstring.h"
-
+#include <cstring>
 #include "MotorVehicle.h"
 
 using namespace std;
@@ -57,16 +55,16 @@ namespace sdds
 
 	MotorVehicle::MotorVehicle(const char* Plate, int year) 
 	{
-		strCpy(plateNUM, Plate);
+		strcpy(plateNUM, Plate);
 
 		Year = year;
 
-		strCpy(Address, "Factory");
+		strcßßpy(Address, "Factory");
 	}
 
 	void MotorVehicle::moveTo(const char* address) 
 	{
-		if (strnCmp(Address, address) != 0) 
+		if (strcmp(Address, address) != 0) 
 		{
 			cout << "|";
 
@@ -91,10 +89,7 @@ namespace sdds
 
 			cout << "|" << endl;
 
-				strnCpy(Address, address);
+				strcpy(Address, address);
 		}
 	}
-
-
-
 }
