@@ -36,7 +36,7 @@ namespace sdds
 
 	bool Truck::addCargo(double cargo) 
 	{
-		bool Load;
+		/*bool Load;
 
 		if (cargo == 0 && Capacity == Cargo) 
 		{
@@ -54,7 +54,17 @@ namespace sdds
 				Cargo += cargo;
 			}
 			Load = true;
-		} return Load;
+		} return Load;*/
+		
+		bool Load;
+		if (cargo != 0 && Capacity != Cargo) {
+			if (Cargo + cargo <= Capacity) Cargo += cargo;
+			else Cargo = Capacity;
+			Load = true;
+		}
+		else Load = false;
+
+		return Load;
 	}
 
 	ostream& operator<<(ostream& os, Truck& Truck) 
