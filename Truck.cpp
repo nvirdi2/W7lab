@@ -48,9 +48,13 @@ namespace sdds
 		return Load;*/
 		
 		bool Load;
-		if (cargo == 0 && Capacity == Cargo) 
+		if (cargo == 0) Capacity == Cargo 
 		{
 		Load = false;
+		}
+		else if (Capacity == Cargo)
+		{
+			Load = false;
 		}
 		else 
 		{
