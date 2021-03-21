@@ -17,7 +17,7 @@ using namespace std;
 
 namespace sdds 
 {
-	bool Truck::cargoUnloaded() 
+	bool Truck::cargoUnload() 
 	{
 		bool Load;
 
@@ -34,7 +34,7 @@ namespace sdds
 			return Load;
 	}
 
-	bool Truck::cargoAdded(double cargo) 
+	bool Truck::addCargo(double cargo) 
 	{
 		bool Load;
 		
