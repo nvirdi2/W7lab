@@ -1,0 +1,17 @@
+Navdeep Virdi
+166485193
+nvirdi2@myseneca.ca
+March 21, 2021
+
+Reflection
+This was one workshop that was not as difficult as the others in my opinion. This workshop
+looked at many learning outcomes and they were pretty easy to catch on to when looking at 
+class material and watching YouTube videos when really needed. This workshop was easier than the
+other because I used the course website examples for reference. Inheriting a derived class from
+a base class was one of the learning outcomes which I think I grasped very fast compared to others. 
+The "shadow a base class member function with a derived class member function" from the learning
+outcomes what very different to me since I heard of this concept for the first time. After understanding
+and using each of the shadow a class member and accessing, it was not too hard. One thing I think
+I could improve on is practice shadowing a base member concept more because it was just a little different
+compared to other concepts. utilize custom input/output was honestly not the hardest yet not the easiest
+learning outcome in this workshop.
