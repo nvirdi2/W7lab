@@ -4,10 +4,10 @@
 // Date: March 21, 2021
 
 //I have done all the coding by myself and only copied the code that my professor provided to complete my workshops and assignments.
-
 #include <iostream>
 #include <ostream>
-#include <cstring>
+//#include <cstring>
+#include "cstring.h"
 
 #include "MotorVehicle.h"
 
@@ -57,16 +57,16 @@ namespace sdds
 
 	MotorVehicle::MotorVehicle(const char* Plate, int year) 
 	{
-		strcpy(plateNUM, Plate);
+		strCpy(plateNUM, Plate);
 
 		Year = year;
 
-		strcpy(Address, "Factory");
+		strCpy(Address, "Factory");
 	}
 
 	void MotorVehicle::moveTo(const char* address) 
 	{
-		if (strcmp(Address, address) != 0) 
+		if (strnCmp(Address, address) != 0) 
 		{
 			cout << "|";
 
@@ -86,12 +86,15 @@ namespace sdds
 
 				cout.setf(ios::left);
 				cout.width(20);
-				cout << Address;
+				cout << address;
 				cout.unsetf(ios::left);
 
 			cout << "|" << endl;
 
-				strcpy(Address, address);
+				strnCpy(Address, address);
 		}
 	}
+
+
+
 }
