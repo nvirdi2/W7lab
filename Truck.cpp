@@ -60,13 +60,13 @@ namespace sdds
 	ostream& operator<<(ostream& os, Truck& Truck) 
 	{
 		Truck.write(os);
-		return os;
+			return os;
 	}
 
 	istream& operator>>(istream& is, Truck& Truck) 
 	{
 		Truck.read(is);
-		return is;
+			return is;
 	}
 
 	Truck::Truck(const char* Plate, int year, double m_capacity, const char* address) : MotorVehicle(Plate, year) 
