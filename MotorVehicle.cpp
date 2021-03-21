@@ -60,7 +60,7 @@ namespace sdds
 
 		Year = year;
 
-		strcßßpy(Address, "Factory");
+		strcpy(Address, "Factory");
 	}
 
 	void MotorVehicle::moveTo(const char* address) 
