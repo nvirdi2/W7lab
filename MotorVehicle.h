@@ -26,6 +26,7 @@ namespace sdds
 		std::ostream& write(std::ostream& os);
 		std::istream& read(std::istream& in);
 	};
+	
 	std::istream& operator>>(std::istream& is, MotorVehicle& motor);
 	std::ostream& operator<<(std::ostream& os, MotorVehicle motor);
 }
