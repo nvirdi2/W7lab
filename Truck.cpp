@@ -37,7 +37,7 @@ namespace sdds
 	bool Truck::addCargo(double cargo) 
 	{
 		
-		bool Load;
+		/*bool Load;
 		if (cargo != 0 && Capacity != Cargo) {
 			if (Cargo + cargo <= Capacity) Cargo += cargo;
 			else Cargo = Capacity;
@@ -45,13 +45,15 @@ namespace sdds
 		}
 		else Load = false;
 
-		return Load;
+		return Load;*/
 		
-		/*bool Load;
-		if (cargo == 0 || Capacity == Cargo) {
+		bool Load;
+		if (cargo == 0 && Capacity == Cargo) 
+		{
 		Load = false;
 		}
-		else {
+		else 
+		{
 			if (Cargo + cargo <= Capacity)
 			{
 				Cargo += cargo;
@@ -62,7 +64,7 @@ namespace sdds
 			}
 			Load = true;
 		}
-		return Load;*/
+		return Load;
 		
 			
 	}
